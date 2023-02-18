@@ -1,0 +1,14 @@
+@import url(blog-post.css);
+
+.hero .main {
+    background: url('/images/sunset.jpg');
+    background-size: cover;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+li{
+    font-weight: 700;
+    font-size: large;
+}

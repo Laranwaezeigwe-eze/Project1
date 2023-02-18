@@ -1,0 +1,86 @@
+@import url("styles.css");
+
+/* Hero section */
+.hero {
+    display: grid;
+    grid-template-columns: 3fr;
+}
+
+.hero .main {
+    background: url('/images/tourist.jpg');
+    background-size: cover;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Blog */
+article {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 50px;
+    grid-gap: 60px;
+}
+
+article img {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 0/1;
+}
+
+@media only screen and(max-width: 768px) {
+    article {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* aside */
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .thumb {
+    flex: 1;
+}
+
+.about-img {
+    border-radius: 50%;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.wrapper .content {
+    flex: 2;
+    padding: 16px;
+}
+
+.wrapper
+p,
+span,
+a {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 24px;
+    }
+
+    article {
+        grid-template-columns: 1fr;
+    }
+
+    .wrapper {
+        margin: 24px 0;
+    }
+}
